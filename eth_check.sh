@@ -1,6 +1,7 @@
 #!/bin/bash
 #Filename: eth_check.sh
-# Quick check for simple mistakes in order to avoid issue after restarts 
+# Quick check for simple mistakes in order to avoid unexpectable issues after restarts 
+# (check ONBOOT/GATEWAY/HWADDR on all servers of the instalation)
 # with nice color output and formating 
 # Tested on RHEL 6.5
 
