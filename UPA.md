@@ -21,7 +21,7 @@ do
 done
 ```
 
-3) RADIUS info :
+#### 3) RADIUS info :
 
 ```bash
 for i in `mysql -uroot porta-configurator -sse "select ip from Servers where name like '%master%'"`
@@ -107,7 +107,7 @@ do
 done
 ```
 
-#### 7) Total backup of actual/current network configuration – uploaded to support-repo
+#### 7) Total backup of actual/current network configuration
 ```bash
 #!/bin/bash
  
@@ -155,7 +155,7 @@ do
 done
 ```
 
-####  Other info
+####  Other info:
 
 ```bash
 9) Check Hardware Suitability
