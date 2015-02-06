@@ -19,7 +19,12 @@ wget -t 5 URL
 wget -t 0 URL
 ```
 ```We can restrict the speed limits in wget by using the --limit-rate argument as follows:```
-```wget --limit-rate 20k http://example.com/file.iso   OR   $ curl URL --limit-rate 20k```
+
+```bash
+wget --limit-rate 20k http://example.com/file.iso
+curl URL --limit-rate 20k
+```
+
 ```If a download using wget gets interrupted before it is complete, we can resume the download from where we left off by using the -c option as follows:```
 ```bash
 wget -c URL
