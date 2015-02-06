@@ -1,8 +1,8 @@
 #!/bin/bash
 #Filename: eth_check.sh
 # Quick check for simple mistakes in order to avoid unexpectable issues after restarts 
-# (check ONBOOT/GATEWAY/HWADDR on all servers of the instalation)
-# with nice color output and formating 
+# (check ONBOOT/GATEWAY/HWADDR on all servers of the installation)
+# with nice color output and formatting 
 # Tested on RHEL 6.5
 
 for i in `mysql -uroot porta-configurator -sse "select ip from Servers"`
