@@ -7,7 +7,8 @@ do
     h=`mysql -uroot porta-configurator -sse "select Name from Servers where IP='$i'"`
     echo -e "\n----- $h $i -----\n"
     rsh_porta.sh $i 'checklicense'
-done```
+done
+```
 
 
 #### 2) tt local files
@@ -17,7 +18,8 @@ do
     h=`mysql -uroot porta-configurator -sse "select Name from Servers where IP='$i'"`
     echo -e "\n----- $h $i -----\n"
     rsh_porta.sh $i 'sudo updatedb && locate tt.local'
-done```
+done
+```
 
 3) RADIUS info :
 
@@ -29,7 +31,8 @@ do
     radiusd info | egrep -i "radiusd|model|build|licen"
     echo " "
     rpm -qi radiusd | egrep "Ver|Rel|Dist|Type"|tr -s " " | sed "1,3 s/ /\n/3"'
-done```
+done
+```
 
 #### 4) Check patches :
 ```bash
@@ -72,7 +75,8 @@ do
     sleep 1
     echo -e "The custom files are the following:\n "
 egrep -vi "apreq.conf|call-recording.httpd.conf|custom-repository.httpd.conf|deny.conf|fcgid.conf|pagespeed.conf|performance.conf|perl.conf|perl-HTML-Mason.conf|php.conf|porta-configurator.httpd.conf|porta-fcgid.conf|porta.httpd.conf|porta-um.httpd.conf|README|ssl.conf" ~/apache_configs.txt '
-done```
+done
+```
 
 #### 6) Total network check :
 ```bash
@@ -100,7 +104,8 @@ do
            echo "---------------------------"
            sleep 1
         done'
-done```
+done
+```
 
 #### 7) Total backup of actual/current network configuration – uploaded to support-repo
 ```bash
