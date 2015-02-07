@@ -4,8 +4,7 @@
 
 ```bash
 #!/bin/bash
-#Filename: fast_ping.sh
-# Change base address 192.168.0 according to your network.
+# Filename: fast_ping.sh
 for ip in 192.168.224.{1..2} ;
 do
     (
@@ -21,7 +20,7 @@ wait
 How it works...<br>
 In the first method, we used the ping command to find out the alive machines on the <br>
 network. We used a for loop for iterating through a list of IP addresses generated using<br>
-the expression ```192.168.0.{1..255}```. The ```{start..end}``` notation will expand and will<br>
+the expression ```192.168.224.{1..2}```. The ```{start..end}``` notation will expand and will<br>
 generate a list of IP addresses<br>
 ```ping $ip -c 2 &> /dev/null``` will run a ping command to the corresponding IP address<br>
 in each execution of the loop. The -c option is used to restrict the number of echo packets to<br>
