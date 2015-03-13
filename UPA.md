@@ -62,7 +62,7 @@ date | mail -s Check_pacthes_output -a ~/check_patches_$ver.txt $mymail
 
 #### 5) Check Apache custom config files :
 ```bash
-for i in `mysql -uroot porta-configurator -sse "select ip from Servers where name like '%slave%' or name like  '%web%' or name like  '%um%'"`
+for i in `mysql -uroot porta-configurator -sse "select ip from Servers where name like '%slave%' or name like  '%web%' or name like  '%um%' or name like 'med'"`
 do
     h=`mysql -uroot porta-configurator -sse "select Name from Servers where IP='$i'"`
     echo -e "\n----- $h $i -----\n"
